@@ -1,0 +1,20 @@
+div {
+  display: block;
+}
+
+.App {
+  font-family: Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #fff;
+  background-color: #64646e;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.Nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

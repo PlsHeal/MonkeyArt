@@ -31,7 +31,7 @@ export function Pixelboard() {
     contextRef.current = ctx;
   }
 
-  const filterCanvas = (e) => {
+  const filterCanvas = () => {
     const cellX = Math.floor(horizontal / cellPixelLength);
     const cellY = Math.floor(vertical / cellPixelLength);
     const startX = cellX * cellPixelLength;

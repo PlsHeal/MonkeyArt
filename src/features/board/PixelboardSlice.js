@@ -3,10 +3,8 @@ import { fetchAccountHistory } from './BananoAPI';
 
 const initialState = {
   save: false,
-  sampleSize: 0,
   horizontal: 0,
   vertical: 0,
-  color: '#000000'
 };
 
 export const fetchAccountHistoryAsync = createAsyncThunk(
@@ -23,11 +21,6 @@ export const pixelboardSlice = createSlice({
   initialState,
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
-    pixelSize: (state, action) => {
-      state.size = action.payload;
-    },
-    pixelColor: (state, action) => {
-    },
     pixelSave: (state, action) => {
       state.save = action.payload;
     },
@@ -48,10 +41,8 @@ export const pixelboardSlice = createSlice({
   },
 });
 
-export const { pixelSize, pixelNumber, pixelSave, cellPixelX, cellPixelY } = pixelboardSlice.actions;
+export const { pixelSave, cellPixelX, cellPixelY } = pixelboardSlice.actions;
 
-export const selectCanvasNumber = (state) => state.pixelboard.color;
-export const selectCanvasSize = (state) => state.pixelboard.size;
 export const canvasSave = (state) => state.pixelboard.save;
 export const selectCellPixelX = (state) => state.pixelboard.horizontal;
 export const selectCellPixelY = (state) => state.pixelboard.vertical;

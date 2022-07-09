@@ -36,7 +36,6 @@ export function Pixelboard() {
     const cellY = Math.floor(vertical / cellPixelLength);
     const startX = cellX * cellPixelLength;
     const startY = cellY * cellPixelLength;
-    console.log(startX);
 
     contextRef.current.fillStyle = color;
     contextRef.current.fillRect(startX, startY, cellPixelLength, cellPixelLength);

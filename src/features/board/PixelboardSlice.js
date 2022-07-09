@@ -42,7 +42,6 @@ export const pixelboardSlice = createSlice({
 });
 
 export const { pixelSave, cellPixelX, cellPixelY } = pixelboardSlice.actions;
-
 export const canvasSave = (state) => state.pixelboard.save;
 export const selectCellPixelX = (state) => state.pixelboard.horizontal;
 export const selectCellPixelY = (state) => state.pixelboard.vertical;

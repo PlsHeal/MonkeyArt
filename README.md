@@ -7,5 +7,5 @@
 3. Finally, render using react with redux management.
 
 ---
-#### *This is a unfinished code so naturally you can contribute for further improvement. That's all and thank you!*
+#### *This is an unfinished code so naturally you can contribute for further improvement. That's all and thank you!*
 ---

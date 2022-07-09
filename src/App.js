@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Pixelboard />
-      <br/>
+      <br />
       <div className="Nav-bar">
         <Navbar />
       </div>
